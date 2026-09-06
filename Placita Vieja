@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO On-Page Metas -->
+  <title id="page-title">Placita Vieja Hotel Boutique & Spa | Santuario Histórico en Santa Marta</title>
+  <meta id="meta-description" name="description" content="Descubre Placita Vieja Hotel Boutique & Spa en el Parque de los Novios, Santa Marta. Un santuario de paz orgánica desde 1925 con ascensor, spa privado y la mejor tarifa garantizada directa." />
+  <meta name="keywords" content="Hotel Boutique Santa Marta, Placita Vieja, Parque de los Novios, Hotel con spa Santa Marta, Hotel con ascensor centro histórico, Suite Macondo, El Viejo y el Mar" />
+  <link rel="canonical" href="https://www.placitavieja.com/es/" />
+  
+  <!-- Hreflang Tags Bilingües -->
+  <link rel="alternate" hreflang="es" href="https://www.placitavieja.com/es/" />
+  <link rel="alternate" hreflang="en" href="https://www.placitavieja.com/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.placitavieja.com/" />
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="hotel" />
+  <meta property="og:title" content="Placita Vieja Hotel Boutique & Spa | Un refugio histórico en Santa Marta" />
+  <meta property="og:description" content="El Efecto Narnia: cruza el umbral y aísla el ruido exterior en un santuario de paz orgánica en el corazón de Santa Marta." />
+  <meta property="og:url" content="https://www.placitavieja.com/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "Placita Vieja Hotel Boutique & Spa",
+    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b",
+    "@id": "https://www.placitavieja.com/#hotel",
+    "url": "https://www.placitavieja.com/",
+    "telephone": "+57-300-123-4567",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle 19 # 2-56, Parque de los Novios",
+      "addressLocality": "Santa Marta",
+      "addressRegion": "Magdalena",
+      "postalCode": "470004",
+      "addressCountry": "CO"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 11.2444,
+      "longitude": -74.2127
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "9.2",
+      "reviewCount": "340",
+      "bestRating": "10",
+      "worstRating": "1"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --brand-blue: #004F9D;
+      --brand-blue-dark: #00376E;
+      --brand-blue-light: #EBF3FA;
+      --brand-orange: #E86C28;
+      --brand-orange-hover: #D05917;
+      --sand-bg: #FAF8F5;
+      --sand-card: #FFFFFF;
+      --sand-warm: #F4EFEA;
+      --dark-footer: #0D1622;
+      --text-main: #1D242E;
+      --text-muted: #5C6773;
+    }
+
+    body {
+      font-family: 'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text-main);
+      background-color: var(--sand-bg);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      /* Espacio para el widget CRO sticky abajo */
+      padding-bottom: 5rem;
+    }
+
+    /* ===== TIPOGRAFÍA ===== */
+    .font-serif-luxury { font-family: 'Cormorant Garamond', Georgia, serif; }
+    .font-script-brand { font-family: 'Great Vibes', cursive; }
+
+    /* ===== ICONOGRAFÍA ===== */
+    .icon-line {
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    /* ===== CRISTAL ESMERILADO ===== */
+    .glass-frosted {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    /* ===== HEADER SLOGAN BAR ===== */
+    .header-slogan-bar {
+      position: relative;
+      padding-left: 14px;
+    }
+    .header-slogan-bar::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10%;
+      height: 80%;
+      width: 3.5px;
+      background: linear-gradient(to bottom, #E86C28, #004F9D);
+      border-radius: 4px;
+    }
+
+    /* ===== ISOTIPO DE ROMBOS ===== */
+    .brand-icon-box {
+      position: relative;
+      width: 34px;
+      height: 34px;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+    .diamond-shape {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border: 2px solid;
+      transform: rotate(45deg);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .diamond-shape-blue {
+      border-color: #004F9D;
+      top: 2px;
+      left: 10px;
+      background: rgba(0, 79, 157, 0.06);
+    }
+    .diamond-shape-orange {
+      border-color: #E86C28;
+      bottom: 2px;
+      left: 2px;
+      background: rgba(232, 108, 40, 0.08);
+    }
+    .group:hover .diamond-shape-blue  { transform: rotate(135deg); }
+    .group:hover .diamond-shape-orange{ transform: rotate(-45deg); }
+
+    /* ===== BOTÓN RESERVAR HEADER ===== */
+    .btn-reservar-header {
+      background: linear-gradient(135deg, #E86C28 0%, #f07b3b 100%);
+      box-shadow: 0 4px 18px rgba(232, 108, 40, 0.35);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      white-space: nowrap;
+    }
+    .btn-reservar-header:hover {
+      box-shadow: 0 6px 24px rgba(232, 108, 40, 0.55);
+      transform: translateY(-1px);
+    }
+
+    /* ===== ROOM SLIDER (SCROLL SNAP) ===== */
+    .room-slider-track {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 1rem;
+    }
+    .room-slide-item {
+      flex: 0 0 82%;
+      scroll-snap-align: start;
+    }
+    @media (min-width: 480px) {
+      .room-slide-item { flex: 0 0 72%; }
+      .room-slider-track { gap: 1.25rem; }
+    }
+    @media (min-width: 640px) {
+      .room-slide-item { flex: 0 0 52%; }
+      .room-slider-track { gap: 1.5rem; }
+    }
+    @media (min-width: 1024px) {
+      .room-slide-item { flex: 0 0 33%; }
+    }
+    @media (min-width: 1280px) {
+      .room-slide-item { flex: 0 0 28%; }
+    }
+
+    /* Ocultar scrollbar */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+    /* ===== ANIMACIONES ===== */
+    @keyframes softPulse {
+      0%, 100% { box-shadow: 0 4px 20px rgba(232, 108, 40, 0.35); }
+      50%       { box-shadow: 0 8px 30px rgba(232, 108, 40, 0.6); }
+    }
+    .pulse-glow { animation: softPulse 3.5s infinite; }
+
+    /* ===== WIDGET CRO MOBILE ===== */
+    /* En móvil el widget se organiza en grid 2-col para inputs + botón full-width */
+    @media (max-width: 639px) {
+      #cro-booking-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+      }
+      #cro-booking-form .cro-guests-wrap {
+        grid-column: 1 / -1;
+      }
+      #cro-booking-form .cro-submit-btn {
+        grid-column: 1 / -1;
+      }
+    }
+
+    /* Touch targets mínimo 44px */
+    button, a, input, select {
+      min-height: 44px;
+    }
+    /* Excepciones para elementos inline pequeños */
+    .trust-item-inner a,
+    .footer-link a,
+    nav a { min-height: unset; }
+
+    /* ===== HERO responsive text ===== */
+    @media (max-width: 390px) {
+      .hero-h1 { font-size: 1.9rem; line-height: 1.15; }
+    }
+
+    /* ===== WHATSAPP — evita solapamiento con CRO widget en móvil ===== */
+    @media (max-width: 639px) {
+      .wa-container { bottom: 5.5rem; right: 1rem; }
+    }
+  </style>
+</head>
+
+<body class="selection:bg-[#E86C28] selection:text-white">
+
+  <!-- ============================================================ -->
+  <!-- BARRA DE ANUNCIO -->
+  <!-- ============================================================ -->
+  <aside class="bg-[#004F9D] text-white py-1.5 px-4 text-center text-[10px] sm:text-[11px] font-medium tracking-wider uppercase flex items-center justify-center gap-2 min-h-[unset]">
+    <span class="w-1.5 h-1.5 rounded-full bg-[#E86C28] animate-ping inline-block flex-shrink-0"></span>
+    <span id="announcement-text" class="leading-tight">
+      Santuario Histórico en el Parque de los Novios · Reserva Directa con Beneficio Exclusivo en Spa
+    </span>
+  </aside>
+
+  <!-- ============================================================ -->
+  <!-- 1. STICKY HEADER -->
+  <!-- ============================================================ -->
+  <header id="main-header" class="sticky top-0 z-50 glass-frosted border-b border-[#004F9D]/10 transition-all duration-300 shadow-sm px-3 sm:px-5 lg:px-12 py-2.5 sm:py-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      
+      <!-- IZQUIERDA: Slogan — oculto en móvil -->
+      <div class="hidden lg:flex items-center flex-shrink-0">
+        <div class="header-slogan-bar">
+          <span id="header-slogan" class="font-serif-luxury italic text-[#004F9D] text-[14px] xl:text-[15px] font-medium tracking-wide leading-snug block max-w-[200px]">
+            "Donde el Caribe y el Pacífico muestran su realidad."
+          </span>
+        </div>
+      </div>
+
+      <!-- CENTRO: Logo -->
+      <a href="#hero" class="flex items-center gap-2.5 sm:gap-3.5 group cursor-pointer no-underline mx-auto lg:mx-0">
+        <div class="brand-icon-box">
+          <div class="diamond-shape diamond-shape-blue"></div>
+          <div class="diamond-shape diamond-shape-orange"></div>
+        </div>
+        <div class="flex flex-col items-center justify-center text-center">
+          <span class="font-script-brand text-[2rem] sm:text-[2.3rem] lg:text-[2.5rem] text-[#E86C28] leading-[0.85] drop-shadow-sm group-hover:scale-105 transition-transform duration-300">
+            Placita Vieja
+          </span>
+          <span class="font-sans text-[7.5px] sm:text-[8.5px] font-bold text-[#004F9D] tracking-[0.2em] sm:tracking-[0.24em] uppercase mt-1">
+            HOTEL BOUTIQUE, SPA
+          </span>
+        </div>
+      </a>
+
+      <!-- DERECHA: Idioma + RESERVAR + Hamburger -->
+      <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+        
+        <!-- Selector Bilingüe — oculto en xs, visible desde sm -->
+        <div class="hidden sm:flex bg-[#004F9D]/5 p-1 rounded-full border border-[#004F9D]/15 items-center text-[10px] sm:text-[11px] font-bold">
+          <button id="lang-btn-es" onclick="setLanguage('es')" class="px-2.5 sm:px-3 py-1 rounded-full bg-white text-[#004F9D] shadow-sm transition-all flex items-center gap-1" style="min-height:32px;">
+            <span>ES</span><span class="opacity-80">ES</span>
+          </button>
+          <button id="lang-btn-en" onclick="setLanguage('en')" class="px-2.5 sm:px-3 py-1 rounded-full text-gray-500 hover:text-[#004F9D] transition-all flex items-center gap-1" style="min-height:32px;">
+            <span>GB</span><span class="opacity-80">ENG</span>
+          </button>
+        </div>
+
+        <!-- RESERVAR — siempre visible -->
+        <a href="#reserva-flotante" class="btn-reservar-header text-white px-4 sm:px-6 py-2 rounded-full text-[10px] sm:text-[12px] font-bold tracking-[0.12em] sm:tracking-[0.14em] uppercase flex items-center justify-center" style="min-height:36px;">
+          <span id="header-reserve-btn">RESERVAR</span>
+        </a>
+
+        <!-- Menú Hamburguesa -->
+        <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-xl text-gray-700 hover:text-[#004F9D] focus:outline-none" aria-label="Abrir menú" style="min-height:44px; min-width:44px;">
+          <svg class="w-6 h-6 icon-line stroke-current" viewBox="0 0 24 24">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú Móvil Desplegable -->
+    <div id="mobile-menu" class="hidden md:hidden pt-3 pb-2 border-t border-[#004F9D]/10 mt-2 flex flex-col gap-1 text-sm font-semibold">
+      <!-- Idioma en menú mobile -->
+      <div class="flex items-center gap-2 py-2 px-3">
+        <span class="text-[11px] text-gray-500 uppercase tracking-wider font-bold mr-1">Idioma:</span>
+        <button onclick="setLanguage('es'); toggleMobileMenu();" class="px-3 py-1 rounded-full bg-[#004F9D]/10 text-[#004F9D] text-xs font-bold">ES</button>
+        <button onclick="setLanguage('en'); toggleMobileMenu();" class="px-3 py-1 rounded-full text-gray-500 hover:bg-gray-100 text-xs font-bold">EN</button>
+      </div>
+      <a href="#habitaciones" onclick="toggleMobileMenu()" class="py-2.5 px-3 rounded-xl hover:bg-[#004F9D]/5 text-gray-800 flex items-center gap-2">
+        <span class="w-1 h-1 rounded-full bg-[#E86C28] flex-shrink-0"></span>Habitaciones
+      </a>
+      <a href="#historia" onclick="toggleMobileMenu()" class="py-2.5 px-3 rounded-xl hover:bg-[#004F9D]/5 text-gray-800 flex items-center gap-2">
+        <span class="w-1 h-1 rounded-full bg-[#E86C28] flex-shrink-0"></span>Boutique & Historia
+      </a>
+      <a href="#spa" onclick="toggleMobileMenu()" class="py-2.5 px-3 rounded-xl hover:bg-[#004F9D]/5 text-gray-800 flex items-center gap-2">
+        <span class="w-1 h-1 rounded-full bg-[#E86C28] flex-shrink-0"></span>Spa & Circuito
+      </a>
+      <a href="#contacto" onclick="toggleMobileMenu()" class="py-2.5 px-3 rounded-xl hover:bg-[#004F9D]/5 text-gray-800 flex items-center gap-2">
+        <span class="w-1 h-1 rounded-full bg-[#E86C28] flex-shrink-0"></span>Contacto
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================================ -->
+    <!-- 2. HERO SECTION — EL EFECTO NARNIA -->
+    <!-- ============================================================ -->
+    <section id="hero" class="relative min-h-[88vh] sm:min-h-[85vh] lg:min-h-[88vh] flex items-center justify-center overflow-hidden">
+      <!-- Fondo -->
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=2000&q=85" 
+             alt="Placita Vieja Hotel Boutique & Spa Santuario Santa Marta" 
+             class="w-full h-full object-cover object-center transform scale-105 transition-transform duration-10000 ease-out" />
+        <div class="absolute inset-0 bg-gradient-to-b from-[#0D1622]/70 via-[#0D1622]/35 to-[#0D1622]/90"></div>
+      </div>
+
+      <!-- Contenido Central -->
+      <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center text-white py-12 sm:py-16">
+        
+        <!-- Badge Narnia -->
+        <div class="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 mb-5 sm:mb-6 text-[10px] sm:text-[11px] uppercase tracking-[0.18em] sm:tracking-[0.22em] font-semibold text-[#FED7AA]">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#E86C28] flex-shrink-0"></span>
+          <span id="hero-badge">El Efecto Narnia · Santuario de Paz Orgánica</span>
+        </div>
+
+        <!-- H1 -->
+        <h1 class="hero-h1 font-serif-luxury text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-wide leading-[1.12] mb-5 sm:mb-6 drop-shadow-md max-w-4xl mx-auto">
+          <span id="hero-h1-line1">Un hotel con historia.</span><br />
+          <span id="hero-h1-line2" class="italic font-normal text-[#FED7AA]">Una estadía para recordar.</span>
+        </h1>
+
+        <!-- Párrafo -->
+        <p id="hero-paragraph" class="text-sm sm:text-base lg:text-xl text-gray-200 font-light max-w-xl sm:max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed drop-shadow px-2 sm:px-0">
+          En el corazón de Santa Marta, descubre un refugio donde la profundidad del Pacífico se encuentra con la alegría del Caribe para brindarte comodidad.
+        </p>
+
+        <!-- CTAs — en móvil, columna; en sm, fila -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 px-4 sm:px-0">
+          <a href="#habitaciones" id="hero-cta-rooms" class="w-full sm:w-auto px-6 sm:px-8 py-3.5 rounded-full bg-[#E86C28] text-white font-semibold text-xs sm:text-sm tracking-wider uppercase shadow-xl hover:bg-[#d05917] transition-all transform hover:-translate-y-0.5 pulse-glow text-center">
+            Explorar Habitaciones
+          </a>
+          <a href="#spa" id="hero-cta-spa" class="w-full sm:w-auto px-6 sm:px-8 py-3.5 rounded-full bg-white/15 backdrop-blur-md border border-white/40 text-white font-semibold text-xs sm:text-sm tracking-wider uppercase hover:bg-white hover:text-[#004F9D] transition-all text-center">
+            Descubrir el Spa
+          </a>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="mt-10 sm:mt-12 flex flex-col items-center gap-2 opacity-75 hover:opacity-100 transition-opacity">
+          <span id="hero-float-text" class="text-[9px] sm:text-[10px] tracking-[0.25em] sm:tracking-[0.3em] uppercase text-gray-300 font-medium">
+            Detener el tiempo y flotar
+          </span>
+          <div class="w-5 h-8 rounded-full border border-white/50 flex items-start justify-center p-1">
+            <div class="w-1 h-2 bg-[#E86C28] rounded-full animate-bounce"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 3. TRUST BAR -->
+    <!-- ============================================================ -->
+    <section class="bg-white border-y border-[#004F9D]/10 py-5 sm:py-6 px-4 sm:px-6 shadow-sm">
+      <div class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+        
+        <!-- TripAdvisor -->
+        <div class="flex items-center gap-2.5 sm:gap-3.5">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#004F9D]/5 flex items-center justify-center text-[#004F9D] flex-shrink-0">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 icon-line stroke-current" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="8" cy="12" r="2"></circle>
+              <circle cx="16" cy="12" r="2"></circle>
+              <path d="M12 16c2 1 4 0 4 0"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="text-[10px] sm:text-xs font-bold text-gray-900 tracking-wider flex items-center gap-1 flex-wrap">
+              <span class="text-emerald-600 font-extrabold">★★★★★</span>
+              <span>TripAdvisor</span>
+            </div>
+            <p id="trust-tripadvisor" class="text-[10px] sm:text-[11px] text-gray-500 leading-tight">Calificación Excelente por viajeros</p>
+          </div>
+        </div>
+
+        <!-- Booking.com -->
+        <div class="flex items-center gap-2.5 sm:gap-3.5">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#004F9D]/5 flex items-center justify-center flex-shrink-0">
+            <span class="text-xs font-black text-[#004F9D]">9.0+</span>
+          </div>
+          <div>
+            <div class="text-[10px] sm:text-xs font-bold text-gray-900 tracking-wider">🏆 Booking.com</div>
+            <p id="trust-booking" class="text-[10px] sm:text-[11px] text-gray-500 leading-tight">Puntuación 9.0+ · Fantástico</p>
+          </div>
+        </div>
+
+        <!-- RNT -->
+        <div class="flex items-center gap-2.5 sm:gap-3.5">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#E86C28]/10 flex items-center justify-center text-[#E86C28] flex-shrink-0">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 icon-line stroke-current" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="text-[10px] sm:text-xs font-bold text-gray-900 tracking-wider">RNT #33273</div>
+            <p id="trust-rnt" class="text-[10px] sm:text-[11px] text-gray-500 leading-tight">Registro Nacional de Turismo Oficial</p>
+          </div>
+        </div>
+
+        <!-- Acústico — oculto en xs y sm, visible xl -->
+        <div class="hidden xl:flex items-center gap-3.5">
+          <div class="w-11 h-11 rounded-full bg-[#004F9D]/5 flex items-center justify-center text-[#004F9D] flex-shrink-0">
+            <svg class="w-6 h-6 icon-line stroke-current" viewBox="0 0 24 24">
+              <path d="M3 18v-6a9 9 0 0118 0v6M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-gray-900 tracking-wider">Aislamiento Acústico</div>
+            <p id="trust-quiet" class="text-[11px] text-gray-500">Barrera de paz frente al ruido exterior</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 4. HISTORIA & 4 ESENCIALES -->
+    <!-- ============================================================ -->
+    <section id="historia" class="py-14 sm:py-20 px-4 sm:px-6 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Bloque Narrativo -->
+        <div class="lg:col-span-5 space-y-5 sm:space-y-6">
+          <div class="inline-flex items-center gap-2 text-[#E86C28] text-[10px] sm:text-xs font-bold tracking-[0.18em] sm:tracking-[0.2em] uppercase">
+            <span class="w-4 h-[1.5px] bg-[#E86C28]"></span>
+            <span id="story-badge">Herencia & Descanso desde 1925</span>
+          </div>
+
+          <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl text-[#004F9D] leading-[1.18] font-normal">
+            <span id="story-title-1">Una historia que se vive,</span><br />
+            <span id="story-title-2" class="italic font-light">no solo se cuenta.</span>
+          </h2>
+
+          <p id="story-desc" class="text-gray-600 leading-relaxed text-sm sm:text-[15px]">
+            Desde 1925, esta casa guarda parte de la memoria de Santa Marta y Buenaventura. Hoy, la convertimos en una experiencia de descanso pensada para disfrutar cada detalle. Una casa colonial restaurada por manos de orfebre donde el arte, la calidez y el silencio convergen.
+          </p>
+
+          <div class="pt-1 flex flex-wrap items-center gap-4">
+            <a href="#habitaciones" id="story-cta-about" class="inline-flex items-center gap-2 text-[#004F9D] font-bold text-xs sm:text-sm tracking-wider uppercase hover:text-[#E86C28] transition-colors group">
+              <span>Conoce Placita Vieja</span>
+              <span class="transform group-hover:translate-x-1.5 transition-transform">→</span>
+            </a>
+            <span class="text-gray-300">|</span>
+            <a href="#spa" id="story-cta-spa" class="inline-flex items-center gap-2 text-gray-700 font-bold text-xs sm:text-sm tracking-wider uppercase hover:text-[#E86C28] transition-colors group">
+              <span>Ver Menú Spa</span>
+              <span class="transform group-hover:translate-x-1.5 transition-transform">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Los 4 Esenciales -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+          
+          <!-- Esencial 1: Ascensor -->
+          <div class="bg-white p-5 sm:p-7 rounded-2xl border border-[#004F9D]/10 shadow-sm hover:shadow-md transition-all hover:border-[#004F9D]/30 group">
+            <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#004F9D]/5 flex items-center justify-center text-[#004F9D] mb-4 sm:mb-5 group-hover:bg-[#004F9D] group-hover:text-white transition-all">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 icon-line stroke-current" viewBox="0 0 24 24">
+                <rect x="4" y="2" width="16" height="20" rx="3"></rect>
+                <path d="M10 9l2-2 2 2M10 15l2 2 2-2"></path>
+              </svg>
+            </div>
+            <h3 id="ess-elev-title" class="font-serif-luxury text-xl sm:text-2xl font-bold text-gray-900 mb-1">Ascensor</h3>
+            <p id="ess-elev-sub" class="text-[10px] sm:text-xs font-semibold text-[#004F9D] uppercase tracking-wider mb-2">Comodidad sin complicaciones</p>
+            <p id="ess-elev-desc" class="text-xs text-gray-500 leading-relaxed">Conexión fluida e inclusiva en los 3 pisos de la casa, una singularidad exclusiva en el centro histórico.</p>
+          </div>
+
+          <!-- Esencial 2: Spa -->
+          <div class="bg-white p-5 sm:p-7 rounded-2xl border border-[#004F9D]/10 shadow-sm hover:shadow-md transition-all hover:border-[#004F9D]/30 group">
+            <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#E86C28]/10 flex items-center justify-center text-[#E86C28] mb-4 sm:mb-5 group-hover:bg-[#E86C28] group-hover:text-white transition-all">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 icon-line stroke-current" viewBox="0 0 24 24">
+                <path d="M12 3a9 9 0 00-9 9c0 4.97 4.03 9 9 9s9-4.03 9-9c0-4-3-7.5-9-9z"></path>
+                <path d="M12 7c-2 2-3 4-3 5.5a3 3 0 006 0C15 11 14 9 12 7z"></path>
+              </svg>
+            </div>
+            <h3 id="ess-spa-title" class="font-serif-luxury text-xl sm:text-2xl font-bold text-gray-900 mb-1">Spa Privado</h3>
+            <p id="ess-spa-sub" class="text-[10px] sm:text-xs font-semibold text-[#E86C28] uppercase tracking-wider mb-2">Tiempo para desconectar</p>
+            <p id="ess-spa-desc" class="text-xs text-gray-500 leading-relaxed">Circuito de hidroterapia para detener el tiempo y restaurar la mente con rituales personalizados.</p>
+          </div>
+
+          <!-- Esencial 3: Bicicletas -->
+          <div class="bg-white p-5 sm:p-7 rounded-2xl border border-[#004F9D]/10 shadow-sm hover:shadow-md transition-all hover:border-[#004F9D]/30 group">
+            <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#004F9D]/5 flex items-center justify-center text-[#004F9D] mb-4 sm:mb-5 group-hover:bg-[#004F9D] group-hover:text-white transition-all">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 icon-line stroke-current" viewBox="0 0 24 24">
+                <circle cx="5.5" cy="17.5" r="3.5"></circle>
+                <circle cx="18.5" cy="17.5" r="3.5"></circle>
+                <path d="M15 6h-3l-4 7h10.5M5.5 17.5l4-7h5.5l3.5 7M12 17.5V11"></path>
+              </svg>
+            </div>
+            <h3 id="ess-bike-title" class="font-serif-luxury text-xl sm:text-2xl font-bold text-gray-900 mb-1">Bicicletas</h3>
+            <p id="ess-bike-sub" class="text-[10px] sm:text-xs font-semibold text-[#004F9D] uppercase tracking-wider mb-2">Santa Marta a tu ritmo</p>
+            <p id="ess-bike-desc" class="text-xs text-gray-500 leading-relaxed">Recorre el centro colonial, el malecón de la bahía y el Parque de los Novios sin prisas.</p>
+          </div>
+
+          <!-- Esencial 4: Piscina -->
+          <div class="bg-white p-5 sm:p-7 rounded-2xl border border-[#004F9D]/10 shadow-sm hover:shadow-md transition-all hover:border-[#004F9D]/30 group">
+            <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#004F9D]/5 flex items-center justify-center text-[#004F9D] mb-4 sm:mb-5 group-hover:bg-[#004F9D] group-hover:text-white transition-all">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 icon-line stroke-current" viewBox="0 0 24 24">
+                <path d="M2 14c2 0 3-1.5 5-1.5s3 1.5 5 1.5 3-1.5 5-1.5 3 1.5 5 1.5M2 19c2 0 3-1.5 5-1.5s3 1.5 5 1.5 3-1.5 5-1.5 3 1.5 5 1.5M16 6a3 3 0 10-6 0v4h6V6z"></path>
+              </svg>
+            </div>
+            <h3 id="ess-pool-title" class="font-serif-luxury text-xl sm:text-2xl font-bold text-gray-900 mb-1">Piscina & Circuito</h3>
+            <p id="ess-pool-sub" class="text-[10px] sm:text-xs font-semibold text-[#004F9D] uppercase tracking-wider mb-2">Circuito Hídrico de autor</p>
+            <p id="ess-pool-desc" class="text-xs text-gray-500 leading-relaxed">Un espejo de agua íntimo rodeado de plantas tropicales para disfrutar de la brisa marina al atardecer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 5. HABITACIONES (LASALA PLAZA STYLE CAROUSEL) -->
+    <!-- ============================================================ -->
+    <section id="habitaciones" class="py-14 sm:py-20 bg-[#FAF8F5] border-y border-[#004F9D]/10 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        
+        <!-- Header del módulo -->
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 sm:mb-10 gap-4 sm:gap-6">
+          <div>
+            <div class="text-[#E86C28] text-[10px] sm:text-xs font-bold tracking-[0.18em] sm:tracking-[0.2em] uppercase mb-2" id="rooms-badge">
+              Lienzos Narrativos · Descanso Singular
+            </div>
+            <h2 class="font-serif-luxury text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#004F9D] font-normal leading-tight">
+              <span id="rooms-title-1">Tu habitación también</span><br class="hidden sm:inline" />
+              <span id="rooms-title-2" class="italic font-light"> cuenta una historia.</span>
+            </h2>
+            <p id="rooms-sub" class="text-gray-500 text-xs sm:text-sm max-w-xl mt-2 sm:mt-3 leading-relaxed">
+              Descubre espacios inspirados en personas, paisajes y momentos que hacen de Placita Vieja un santuario diferente.
+            </p>
+          </div>
+
+          <!-- Flechas slider -->
+          <div class="flex items-center gap-3 self-start sm:self-end flex-shrink-0">
+            <button onclick="scrollRooms(-1)" class="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-[#004F9D]/20 bg-white text-[#004F9D] hover:bg-[#004F9D] hover:text-white transition-all flex items-center justify-center shadow-sm" aria-label="Anterior habitación">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 icon-line stroke-current" viewBox="0 0 24 24">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button onclick="scrollRooms(1)" class="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-[#004F9D]/20 bg-white text-[#004F9D] hover:bg-[#004F9D] hover:text-white transition-all flex items-center justify-center shadow-sm" aria-label="Siguiente habitación">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 icon-line stroke-current" viewBox="0 0 24 24">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Carrusel -->
+        <div id="room-slider" class="room-slider-track no-scrollbar">
+          
+          <!-- Card 1: El Viejo y El Mar -->
+          <div class="room-slide-item">
+            <article class="relative h-[480px] sm:h-[520px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg group transition-all duration-500 hover:shadow-2xl flex flex-col justify-between p-5 sm:p-6">
+              <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=85" 
+                   alt="Habitación Deluxe El Viejo y El Mar Placita Vieja" 
+                   class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0D1622]/95 via-[#0D1622]/30 to-[#0D1622]/60 group-hover:via-[#0D1622]/20 transition-colors"></div>
+
+              <div class="relative z-10 flex items-center justify-between gap-2">
+                <span class="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] sm:text-[11px] font-bold text-[#004F9D] uppercase tracking-wider">Deluxe Room</span>
+                <span class="px-2.5 py-1 rounded-full bg-[#E86C28]/90 backdrop-blur-md text-[9px] sm:text-[10px] font-bold text-white uppercase tracking-wider">Tarifa Web</span>
+              </div>
+
+              <div class="relative z-10 text-white space-y-2.5 sm:space-y-3">
+                <span class="text-[10px] sm:text-[11px] text-[#FED7AA] uppercase tracking-widest font-semibold block" id="r1-narrative">La Habitación del Abuelo</span>
+                <h3 class="font-serif-luxury text-xl sm:text-2xl lg:text-3xl font-light leading-tight group-hover:text-[#FED7AA] transition-colors" id="r1-title">Habitación Deluxe El Viejo y El Mar</h3>
+                <p class="text-xs text-gray-300 line-clamp-2 leading-relaxed font-light" id="r1-desc">Inspirada en el ritual marino del fundador y la calma de flotar en el mar. Cama King, balcón con vista colonial y arte de orfebrería original.</p>
+                <div class="flex items-center gap-2 text-[10px] sm:text-[11px] text-gray-300 pt-1 border-t border-white/15">
+                  <span>King Bed</span><span>·</span><span>36 m²</span><span>·</span><span>Vista Parque</span>
+                </div>
+                <div class="pt-1.5">
+                  <a href="#reserva-flotante" class="w-full py-2.5 rounded-full bg-white/20 backdrop-blur-md border border-white/40 hover:bg-[#E86C28] hover:border-[#E86C28] text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+                    <span class="room-action-text">Ver habitación</span><span>→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 2: Uguana Nuka -->
+          <div class="room-slide-item">
+            <article class="relative h-[480px] sm:h-[520px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg group transition-all duration-500 hover:shadow-2xl flex flex-col justify-between p-5 sm:p-6">
+              <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1000&q=85" 
+                   alt="Junior Suite Uguana Nuka Placita Vieja" 
+                   class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0D1622]/95 via-[#0D1622]/30 to-[#0D1622]/60 group-hover:via-[#0D1622]/20 transition-colors"></div>
+
+              <div class="relative z-10 flex items-center justify-between gap-2">
+                <span class="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] sm:text-[11px] font-bold text-[#E86C28] uppercase tracking-wider">Junior Suite</span>
+                <span class="px-2.5 py-1 rounded-full bg-[#E86C28]/90 backdrop-blur-md text-[9px] sm:text-[10px] font-bold text-white uppercase tracking-wider">Tarifa Web</span>
+              </div>
+
+              <div class="relative z-10 text-white space-y-2.5 sm:space-y-3">
+                <span class="text-[10px] sm:text-[11px] text-[#FED7AA] uppercase tracking-widest font-semibold block" id="r2-narrative">Dialecto Wiwa · Romance</span>
+                <h3 class="font-serif-luxury text-xl sm:text-2xl lg:text-3xl font-light leading-tight group-hover:text-[#FED7AA] transition-colors" id="r2-title">Junior Suite Uguana Nuka</h3>
+                <p class="text-xs text-gray-300 line-clamp-2 leading-relaxed font-light" id="r2-desc">El vocablo indígena Wiwa para el amor y la complicidad. Espacio íntimo con tina de hidromasaje privada y piezas artesanales exclusivas.</p>
+                <div class="flex items-center gap-2 text-[10px] sm:text-[11px] text-gray-300 pt-1 border-t border-white/15">
+                  <span>Tina Hidromasaje</span><span>·</span><span>42 m²</span><span>·</span><span>Balcón</span>
+                </div>
+                <div class="pt-1.5">
+                  <a href="#reserva-flotante" class="w-full py-2.5 rounded-full bg-white/20 backdrop-blur-md border border-white/40 hover:bg-[#E86C28] hover:border-[#E86C28] text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+                    <span class="suite-action-text">Explorar suite</span><span>→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 3: Macondo -->
+          <div class="room-slide-item">
+            <article class="relative h-[480px] sm:h-[520px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg group transition-all duration-500 hover:shadow-2xl flex flex-col justify-between p-5 sm:p-6">
+              <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1000&q=85" 
+                   alt="Suite Presidencial Macondo Placita Vieja" 
+                   class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0D1622]/95 via-[#0D1622]/30 to-[#0D1622]/60 group-hover:via-[#0D1622]/20 transition-colors"></div>
+
+              <div class="relative z-10 flex items-center justify-between gap-2">
+                <span class="px-3 py-1 rounded-full bg-[#004F9D] text-[10px] sm:text-[11px] font-bold text-white uppercase tracking-wider">Suite Presidencial</span>
+                <span class="px-2.5 py-1 rounded-full bg-[#E86C28]/90 backdrop-blur-md text-[9px] sm:text-[10px] font-bold text-white uppercase tracking-wider">Exclusiva</span>
+              </div>
+
+              <div class="relative z-10 text-white space-y-2.5 sm:space-y-3">
+                <span class="text-[10px] sm:text-[11px] text-[#FED7AA] uppercase tracking-widest font-semibold block" id="r3-narrative">Realismo Mágico</span>
+                <h3 class="font-serif-luxury text-xl sm:text-2xl lg:text-3xl font-light leading-tight group-hover:text-[#FED7AA] transition-colors" id="r3-title">Suite Presidencial Macondo</h3>
+                <p class="text-xs text-gray-300 line-clamp-2 leading-relaxed font-light" id="r3-desc">Homenaje al encanto literario del Caribe y las mariposas amarillas. Amplitud sublime, terraza privada, jacuzzi y mayordomía boutique.</p>
+                <div class="flex items-center gap-2 text-[10px] sm:text-[11px] text-gray-300 pt-1 border-t border-white/15">
+                  <span>Terraza & Jacuzzi</span><span>·</span><span>65 m²</span><span>·</span><span>Piso Superior</span>
+                </div>
+                <div class="pt-1.5">
+                  <a href="#reserva-flotante" class="w-full py-2.5 rounded-full bg-white/20 backdrop-blur-md border border-white/40 hover:bg-[#E86C28] hover:border-[#E86C28] text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+                    <span class="suite-action-text">Explorar suite</span><span>→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 4: Zona Bananera -->
+          <div class="room-slide-item">
+            <article class="relative h-[480px] sm:h-[520px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg group transition-all duration-500 hover:shadow-2xl flex flex-col justify-between p-5 sm:p-6">
+              <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1000&q=85" 
+                   alt="Habitación Estándar Zona Bananera Placita Vieja" 
+                   class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0D1622]/95 via-[#0D1622]/30 to-[#0D1622]/60 group-hover:via-[#0D1622]/20 transition-colors"></div>
+
+              <div class="relative z-10 flex items-center justify-between gap-2">
+                <span class="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] sm:text-[11px] font-bold text-[#004F9D] uppercase tracking-wider">Standard Room</span>
+                <span class="px-2.5 py-1 rounded-full bg-[#E86C28]/90 backdrop-blur-md text-[9px] sm:text-[10px] font-bold text-white uppercase tracking-wider">Tarifa Web</span>
+              </div>
+
+              <div class="relative z-10 text-white space-y-2.5 sm:space-y-3">
+                <span class="text-[10px] sm:text-[11px] text-[#FED7AA] uppercase tracking-widest font-semibold block" id="r4-narrative">Legado Agrícola & Histórico</span>
+                <h3 class="font-serif-luxury text-xl sm:text-2xl lg:text-3xl font-light leading-tight group-hover:text-[#FED7AA] transition-colors" id="r4-title">Habitación Estándar Zona Bananera</h3>
+                <p class="text-xs text-gray-300 line-clamp-2 leading-relaxed font-light" id="r4-desc">Evocación de la época dorada de la región. Diseño colonial sobrio, ventilación natural y comodidades contemporáneas.</p>
+                <div class="flex items-center gap-2 text-[10px] sm:text-[11px] text-gray-300 pt-1 border-t border-white/15">
+                  <span>Queen Bed</span><span>·</span><span>28 m²</span><span>·</span><span>Patio Colonial</span>
+                </div>
+                <div class="pt-1.5">
+                  <a href="#reserva-flotante" class="w-full py-2.5 rounded-full bg-white/20 backdrop-blur-md border border-white/40 hover:bg-[#E86C28] hover:border-[#E86C28] text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+                    <span class="room-action-text">Ver habitación</span><span>→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 5: Sierra Nevada -->
+          <div class="room-slide-item">
+            <article class="relative h-[480px] sm:h-[520px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg group transition-all duration-500 hover:shadow-2xl flex flex-col justify-between p-5 sm:p-6">
+              <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1000&q=85" 
+                   alt="Habitación Estándar Sierra Nevada Placita Vieja" 
+                   class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0D1622]/95 via-[#0D1622]/30 to-[#0D1622]/60 group-hover:via-[#0D1622]/20 transition-colors"></div>
+
+              <div class="relative z-10 flex items-center justify-between gap-2">
+                <span class="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] sm:text-[11px] font-bold text-[#004F9D] uppercase tracking-wider">Standard Room</span>
+                <span class="px-2.5 py-1 rounded-full bg-[#E86C28]/90 backdrop-blur-md text-[9px] sm:text-[10px] font-bold text-white uppercase tracking-wider">Tarifa Web</span>
+              </div>
+
+              <div class="relative z-10 text-white space-y-2.5 sm:space-y-3">
+                <span class="text-[10px] sm:text-[11px] text-[#FED7AA] uppercase tracking-widest font-semibold block" id="r5-narrative">Respeto Sagrado Ancestral</span>
+                <h3 class="font-serif-luxury text-xl sm:text-2xl lg:text-3xl font-light leading-tight group-hover:text-[#FED7AA] transition-colors" id="r5-title">Habitación Estándar Sierra Nevada</h3>
+                <p class="text-xs text-gray-300 line-clamp-2 leading-relaxed font-light" id="r5-desc">Homenaje a los picos sagrados que coronan a Santa Marta. Un ambiente fresco, apacible e impregnado de misticismo.</p>
+                <div class="flex items-center gap-2 text-[10px] sm:text-[11px] text-gray-300 pt-1 border-t border-white/15">
+                  <span>Double Queen</span><span>·</span><span>30 m²</span><span>·</span><span>Luz Cenital</span>
+                </div>
+                <div class="pt-1.5">
+                  <a href="#reserva-flotante" class="w-full py-2.5 rounded-full bg-white/20 backdrop-blur-md border border-white/40 hover:bg-[#E86C28] hover:border-[#E86C28] text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+                    <span class="room-action-text">Ver habitación</span><span>→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 6. SPA SANTUARIO — FULL WIDTH -->
+    <!-- ============================================================ -->
+    <section id="spa" class="w-full bg-[#0A1828] text-white py-16 sm:py-24 relative overflow-hidden">
+      
+      <!-- Orbes de fondo -->
+      <div class="absolute -right-32 -top-32 w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] rounded-full bg-[#E86C28]/15 blur-[100px] sm:blur-[120px] pointer-events-none"></div>
+      <div class="absolute -left-32 -bottom-32 w-[350px] sm:w-[550px] h-[350px] sm:h-[550px] rounded-full bg-[#004F9D]/30 blur-[110px] sm:blur-[130px] pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          
+          <!-- Columna Izquierda: Narrativa -->
+          <div class="space-y-6 sm:space-y-7">
+            
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-[#FED7AA] text-[10px] sm:text-xs font-bold tracking-[0.18em] sm:tracking-[0.2em] uppercase">
+              <svg class="w-4 h-4 icon-line stroke-current flex-shrink-0" viewBox="0 0 24 24">
+                <path d="M12 2.5C12 2.5 7 8 7 13.5C7 16.5 9.2 19 12 19C14.8 19 17 16.5 17 13.5C17 8 12 2.5 12 2.5Z"></path>
+                <path d="M12 19C10.5 19 4 17.5 3 13C2 9 6.5 8 6.5 8"></path>
+                <path d="M12 19C13.5 19 20 17.5 21 13C22 9 17.5 8 17.5 8"></path>
+              </svg>
+              <span>Santuario de Hidroterapia Privado</span>
+            </div>
+
+            <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-light leading-[1.12]">
+              <span id="spa-h2-1">Un santuario de paz</span><br />
+              <span id="spa-h2-2" class="italic font-normal text-[#FED7AA]">en el corazón de Santa Marta.</span>
+            </h2>
+
+            <p id="spa-desc-text" class="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed font-light">
+              Haz una pausa en nuestro circuito hídrico privado y deja que la ciudad continúe a tu propio ritmo. Diseñado como un refugio de bienestar orgánico que regenera cuerpo y espíritu tras un día bajo el sol del Caribe y las brisas de la Sierra Nevada.
+            </p>
+
+            <!-- Cuadro Upselling -->
+            <div class="bg-white/10 backdrop-blur-md p-5 sm:p-6 rounded-2xl border border-white/20 shadow-xl relative overflow-hidden group hover:border-[#FED7AA]/50 transition-all">
+              <div class="flex items-start gap-3 sm:gap-4">
+                <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#E86C28]/20 flex-shrink-0 flex items-center justify-center text-[#FED7AA] group-hover:bg-[#E86C28] group-hover:text-white transition-colors">
+                  <svg class="w-5 h-5 sm:w-6 sm:h-6 icon-line stroke-current" viewBox="0 0 24 24">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <path d="M12 8v8"></path>
+                    <path d="M8 12h8"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#FED7AA] mb-1.5" id="spa-upsell-badge">
+                    Añadir una experiencia a mi estadía
+                  </div>
+                  <p id="spa-upsell-desc" class="text-xs sm:text-sm text-gray-200 leading-relaxed font-light">
+                    Personaliza tu estancia con acceso exclusivo al circuito hídrico, masajes terapéuticos con esencias botánicas del Magdalena y una copa de cortesía en Sol Bailado Bar.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botones Spa -->
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-1">
+              <a href="#reserva-flotante" id="spa-cta-1" class="w-full sm:w-auto px-7 sm:px-8 py-3.5 rounded-full bg-[#E86C28] text-white font-bold text-xs tracking-wider uppercase hover:bg-[#d05917] transition-all shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 text-center">
+                Descubrir el Spa
+              </a>
+              <a href="#contacto" id="spa-cta-2" class="w-full sm:w-auto px-7 sm:px-8 py-3.5 rounded-full bg-white/15 border border-white/30 text-white font-bold text-xs tracking-wider uppercase hover:bg-white hover:text-[#004F9D] transition-all text-center">
+                Explorar Santa Marta
+              </a>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Imagen Spa -->
+          <div class="order-first lg:order-last">
+            <div class="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border border-white/15 group">
+              <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85" 
+                   alt="Circuito Hídrico Privado y Spa Placita Vieja Hotel Boutique" 
+                   class="w-full h-[260px] sm:h-[380px] lg:h-[500px] xl:h-[540px] object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0A1828] via-transparent to-transparent opacity-85"></div>
+              <div class="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 flex items-center justify-between text-xs text-white/90">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-[#E86C28] animate-pulse flex-shrink-0"></span>
+                  <span class="font-medium tracking-wide text-[10px] sm:text-xs">Circuito Hídrico de Autor · Reserva con antelación</span>
+                </div>
+                <span class="font-serif-luxury italic text-[#FED7AA] text-xs sm:text-sm hidden sm:block">Privacidad absoluta</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 7. INCENTIVOS RESERVA DIRECTA -->
+    <!-- ============================================================ -->
+    <section class="py-14 sm:py-20 bg-white border-y border-[#004F9D]/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+          <span id="perks-badge" class="text-[#E86C28] text-[10px] sm:text-xs font-bold tracking-[0.18em] sm:tracking-[0.2em] uppercase">Reserva Sin Intermediarios</span>
+          <h2 id="perks-title" class="font-serif-luxury text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#004F9D] mt-2 mb-3 leading-tight">
+            Ventajas exclusivas al reservar directo en nuestra web
+          </h2>
+          <p id="perks-sub" class="text-xs sm:text-sm text-gray-500 leading-relaxed">
+            Reserva directamente con Placita Vieja y disfruta de los beneficios disponibles exclusivamente a través de nuestra web.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-8">
+          
+          <!-- Perk 1 -->
+          <div class="p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-[#FAF8F5] border border-[#004F9D]/10 hover:border-[#E86C28]/40 transition-all text-center group shadow-sm hover:shadow-md">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 mx-auto rounded-2xl bg-[#E86C28]/10 text-[#E86C28] flex items-center justify-center mb-4 sm:mb-5 group-hover:bg-[#E86C28] group-hover:text-white transition-colors">
+              <svg class="w-6 h-6 sm:w-7 sm:h-7 icon-line stroke-current" viewBox="0 0 24 24">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path>
+              </svg>
+            </div>
+            <h3 id="perk1-h3" class="font-serif-luxury text-xl sm:text-2xl font-bold text-gray-900 mb-2">Mejor precio garantizado</h3>
+            <p id="perk1-p" class="text-xs text-gray-500 leading-relaxed">Encuentra aquí nuestra mejor tarifa disponible sin comisiones extras ni sobreprecios de agencias de terceros.</p>
+          </div>
+
+          <!-- Perk 2 -->
+          <div class="p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-[#FAF8F5] border border-[#004F9D]/10 hover:border-[#004F9D]/40 transition-all text-center group shadow-sm hover:shadow-md">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 mx-auto rounded-2xl bg-[#004F9D]/10 text-[#004F9D] flex items-center justify-center mb-4 sm:mb-5 group-hover:bg-[#004F9D] group-hover:text-white transition-colors">
+              <svg class="w-6 h-6 sm:w-7 sm:h-7 icon-line stroke-current" viewBox="0 0 24 24">
+                <path d="M12 2.5C12 2.5 7 8 7 13.5C7 16.5 9.2 19 12 19C14.8 19 17 16.5 17 13.5C17 8 12 2.5 12 2.5Z"></path>
+              </svg>
+            </div>
+            <h3 id="perk2-h3" class="font-serif-luxury text-xl sm:text-2xl font-bold text-gray-900 mb-2">Beneficio en Spa</h3>
+            <p id="perk2-p" class="text-xs text-gray-500 leading-relaxed">Disfruta de un beneficio especial durante tu estadía en nuestro circuito privado de hidroterapia.</p>
+          </div>
+
+          <!-- Perk 3 -->
+          <div class="p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-[#FAF8F5] border border-[#004F9D]/10 hover:border-[#004F9D]/40 transition-all text-center group shadow-sm hover:shadow-md">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 mx-auto rounded-2xl bg-[#004F9D]/10 text-[#004F9D] flex items-center justify-center mb-4 sm:mb-5 group-hover:bg-[#004F9D] group-hover:text-white transition-colors">
+              <svg class="w-6 h-6 sm:w-7 sm:h-7 icon-line stroke-current" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 id="perk3-h3" class="font-serif-luxury text-xl sm:text-2xl font-bold text-gray-900 mb-2">Check-out flexible</h3>
+            <p id="perk3-p" class="text-xs text-gray-500 leading-relaxed">Sujeto a disponibilidad. Disfruta con calma de tus últimas horas en Santa Marta sin prisas innecesarias.</p>
+          </div>
+        </div>
+
+        <div class="text-center mt-10 sm:mt-12">
+          <a href="#reserva-flotante" id="perks-cta-btn" class="inline-flex items-center gap-2 px-8 sm:px-9 py-3.5 rounded-full bg-[#004F9D] text-white text-xs font-bold tracking-wider uppercase hover:bg-[#00376E] transition-all shadow-md hover:shadow-lg">
+            Reservar en la web
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 8. RESEÑAS -->
+    <!-- ============================================================ -->
+    <section class="py-14 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
+        <span id="reviews-badge" class="text-[#E86C28] text-[10px] sm:text-xs font-bold tracking-[0.18em] sm:tracking-[0.2em] uppercase">Testimonios Verificados</span>
+        <h2 id="reviews-title" class="font-serif-luxury text-2xl sm:text-3xl sm:text-4xl text-[#004F9D] mt-2 mb-2 leading-tight">
+          Lo que dicen quienes han vivido el santuario
+        </h2>
+        <p id="reviews-sub" class="text-xs text-gray-500">
+          Opiniones reales de huéspedes en Booking.com, TripAdvisor y Google Reviews
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+        
+        <!-- Reseña 1 -->
+        <div class="bg-white p-5 sm:p-7 rounded-2xl border border-[#004F9D]/10 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3 sm:mb-4">
+              <span class="text-amber-500 text-xs sm:text-sm">★ ★ ★ ★ ★</span>
+              <span class="text-[9px] sm:text-[10px] font-bold text-[#004F9D] uppercase tracking-wider bg-blue-50 px-2 py-0.5 rounded">Booking.com 10/10</span>
+            </div>
+            <p id="rev1-text" class="font-serif-luxury text-base sm:text-lg italic text-gray-700 leading-snug">
+              "Un oasis increíble en medio del movimiento del Parque de los Novios. Cierras la puerta del hotel y reina el silencio absoluto. El ascensor y el spa son una joya única."
+            </p>
+          </div>
+          <div class="mt-5 sm:mt-6 pt-4 border-t border-gray-100 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-[#004F9D] text-white font-bold text-xs flex items-center justify-center flex-shrink-0">MC</div>
+            <div>
+              <div class="text-xs font-bold text-gray-900">María Camila R.</div>
+              <div class="text-[10px] text-gray-400">Bogotá · Huésped Verificada</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reseña 2 -->
+        <div class="bg-white p-5 sm:p-7 rounded-2xl border border-[#004F9D]/10 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3 sm:mb-4">
+              <span class="text-amber-500 text-xs sm:text-sm">★ ★ ★ ★ ★</span>
+              <span class="text-[9px] sm:text-[10px] font-bold text-emerald-700 uppercase tracking-wider bg-emerald-50 px-2 py-0.5 rounded">TripAdvisor</span>
+            </div>
+            <p id="rev2-text" class="font-serif-luxury text-base sm:text-lg italic text-gray-700 leading-snug">
+              "Se siente el amor con el que la familia restauró esta casa. La Suite Macondo tiene magia pura. El servicio es personalizado como en ninguna cadena comercial."
+            </p>
+          </div>
+          <div class="mt-5 sm:mt-6 pt-4 border-t border-gray-100 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-[#E86C28] text-white font-bold text-xs flex items-center justify-center flex-shrink-0">JH</div>
+            <div>
+              <div class="text-xs font-bold text-gray-900">Jean-Paul H.</div>
+              <div class="text-[10px] text-gray-400">Lyon, Francia · Huésped Verificado</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reseña 3 -->
+        <div class="bg-white p-5 sm:p-7 rounded-2xl border border-[#004F9D]/10 shadow-sm flex flex-col justify-between sm:col-span-2 lg:col-span-1">
+          <div>
+            <div class="flex items-center justify-between mb-3 sm:mb-4">
+              <span class="text-amber-500 text-xs sm:text-sm">★ ★ ★ ★ ★</span>
+              <span class="text-[9px] sm:text-[10px] font-bold text-blue-700 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Google Reviews</span>
+            </div>
+            <p id="rev3-text" class="font-serif-luxury text-base sm:text-lg italic text-gray-700 leading-snug">
+              "La mejor ubicación de Santa Marta pero sin el ruido exterior. El desayuno caribeño delicioso y el circuito hídrico privado por la tarde nos renovó por completo."
+            </p>
+          </div>
+          <div class="mt-5 sm:mt-6 pt-4 border-t border-gray-100 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-gray-800 text-white font-bold text-xs flex items-center justify-center flex-shrink-0">DS</div>
+            <div>
+              <div class="text-xs font-bold text-gray-900">Daniel & Sofia</div>
+              <div class="text-[10px] text-gray-400">Buenos Aires · Aniversario</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- 9. FOOTER -->
+  <!-- ============================================================ -->
+  <footer id="contacto" class="bg-[#0D1622] text-gray-300 pt-12 sm:pt-16 pb-32 sm:pb-28 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 pb-10 sm:pb-12 border-b border-white/10">
+        
+        <!-- Col 1-2: Marca -->
+        <div class="col-span-2 lg:col-span-2 space-y-4">
+          <a href="#hero" class="flex items-center gap-3 sm:gap-3.5 group cursor-pointer no-underline">
+            <div class="brand-icon-box">
+              <div class="diamond-shape diamond-shape-blue" style="border-color: #5EA4F0;"></div>
+              <div class="diamond-shape diamond-shape-orange"></div>
+            </div>
+            <div class="flex flex-col items-start">
+              <span class="font-script-brand text-[2.2rem] sm:text-[2.5rem] text-[#E86C28] leading-[0.85] drop-shadow-sm">
+                Placita Vieja
+              </span>
+              <span class="font-sans text-[7.5px] sm:text-[8.5px] font-bold text-[#FED7AA] tracking-[0.2em] sm:tracking-[0.24em] uppercase mt-1">
+                HOTEL BOUTIQUE, SPA
+              </span>
+            </div>
+          </a>
+
+          <p id="footer-summary" class="text-xs text-gray-400 leading-relaxed max-w-sm pt-1 sm:pt-2">
+            Historia, descanso y una forma diferente de vivir Santa Marta. Un santuario de paz orgánica donde la elegancia y la calidez del hogar se fusionan en el Parque de los Novios.
+          </p>
+
+          <div class="text-xs text-gray-400 space-y-1.5 pt-1 sm:pt-2">
+            <div class="flex items-start gap-2">
+              <span class="text-[#E86C28] mt-0.5 flex-shrink-0">📍</span>
+              <span class="font-medium text-gray-300 leading-snug">Calle 19 # 2-56, Parque de los Novios, Santa Marta, Colombia</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-[#E86C28] flex-shrink-0">📞</span>
+              <span class="leading-snug">+57 (300) 123-4567 · contacto@placitavieja.com</span>
+            </div>
+            <div class="flex items-center gap-2 text-[11px] text-gray-500">
+              <span>RNT #33273 · Sostenibilidad Turística Certificada</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 3: Navegación -->
+        <div class="col-span-1">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white mb-3 sm:mb-4" id="footer-nav-title">Navegación</h4>
+          <ul class="space-y-2 sm:space-y-2.5 text-xs text-gray-400">
+            <li><a href="#hero" class="hover:text-white transition-colors" id="f-link-home">Inicio</a></li>
+            <li><a href="#habitaciones" class="hover:text-white transition-colors" id="f-link-rooms">Habitaciones</a></li>
+            <li><a href="#spa" class="hover:text-white transition-colors" id="f-link-spa">Spa & Circuito</a></li>
+            <li><a href="#historia" class="hover:text-white transition-colors" id="f-link-boutique">Boutique & Gastronomía</a></li>
+            <li><a href="#contacto" class="hover:text-white transition-colors" id="f-link-contact">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Santa Marta -->
+        <div class="col-span-1">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white mb-3 sm:mb-4" id="footer-dest-title">Santa Marta</h4>
+          <ul class="space-y-2 sm:space-y-2.5 text-xs text-gray-400">
+            <li><a href="#parque" class="hover:text-white transition-colors">Parque de los Novios</a></li>
+            <li><a href="#sierra" class="hover:text-white transition-colors">Sierra Nevada</a></li>
+            <li><a href="#tayrona" class="hover:text-white transition-colors">Parque Tayrona</a></li>
+            <li><a href="#bahia" class="hover:text-white transition-colors">Bahía de Santa Marta</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Políticas -->
+        <div class="col-span-2 sm:col-span-1">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white mb-3 sm:mb-4" id="footer-legal-title">Políticas</h4>
+          <ul class="space-y-2 sm:space-y-2.5 text-xs text-gray-400">
+            <li><a href="#politicas" class="hover:text-white transition-colors">Términos y Condiciones</a></li>
+            <li><a href="#privacidad" class="hover:text-white transition-colors">Aviso de Privacidad</a></li>
+            <li><a href="#escnna" class="hover:text-white transition-colors">Prevención ESCNNA Ley 679</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-3 sm:gap-4">
+        <div class="text-center sm:text-left">
+          © 2026 Placita Vieja Hotel Boutique & Spa. Todos los derechos reservados.
+        </div>
+        <div class="flex items-center gap-3 sm:gap-4">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#E86C28] transition-colors">Instagram</a>
+          <span>·</span>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#E86C28] transition-colors">Facebook</a>
+          <span>·</span>
+          <a href="https://tripadvisor.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#E86C28] transition-colors">TripAdvisor</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================ -->
+  <!-- 10. WIDGET CRO FLOTANTE (RESPONSIVE MOBILE-FIRST) -->
+  <!-- ============================================================ -->
+  <aside id="reserva-flotante" class="fixed bottom-0 left-0 right-0 z-40 px-2 sm:px-4 lg:px-6 pb-2 pt-1.5 pointer-events-none">
+    <div class="max-w-5xl mx-auto glass-frosted border border-[#004F9D]/20 shadow-2xl rounded-xl sm:rounded-2xl lg:rounded-full pointer-events-auto transition-all">
+      
+      <!-- Vista MOBILE: grid compacto -->
+      <div class="block sm:hidden p-3">
+        <form id="cro-booking-form-mobile" onsubmit="handleBookingSubmit(event)" class="space-y-2">
+          <div class="grid grid-cols-2 gap-2">
+            <!-- Check-In -->
+            <div class="bg-white px-3 py-2 rounded-xl border border-gray-200 hover:border-[#004F9D] transition-colors">
+              <label id="cro-checkin-label-m" for="cro-checkin-m" class="block text-[9px] uppercase tracking-wider font-bold text-gray-400">Check-In</label>
+              <input type="date" id="cro-checkin-m" required class="w-full text-xs font-semibold text-gray-800 bg-transparent outline-none cursor-pointer" style="min-height:unset;" />
+            </div>
+            <!-- Check-Out -->
+            <div class="bg-white px-3 py-2 rounded-xl border border-gray-200 hover:border-[#004F9D] transition-colors">
+              <label id="cro-checkout-label-m" for="cro-checkout-m" class="block text-[9px] uppercase tracking-wider font-bold text-gray-400">Check-Out</label>
+              <input type="date" id="cro-checkout-m" required class="w-full text-xs font-semibold text-gray-800 bg-transparent outline-none cursor-pointer" style="min-height:unset;" />
+            </div>
+          </div>
+          <!-- Huéspedes + Botón -->
+          <div class="grid grid-cols-2 gap-2">
+            <div class="bg-white px-3 py-2 rounded-xl border border-gray-200 hover:border-[#004F9D] transition-colors">
+              <label class="block text-[9px] uppercase tracking-wider font-bold text-gray-400">Huéspedes</label>
+              <select id="cro-guests-m" class="w-full text-xs font-semibold text-gray-800 bg-transparent outline-none cursor-pointer" style="min-height:unset;">
+                <option value="2">2 Huéspedes</option>
+                <option value="1">1 Huésped</option>
+                <option value="3">3 Huéspedes</option>
+                <option value="4">Familiar (4+)</option>
+              </select>
+            </div>
+            <button type="submit" class="rounded-xl bg-gradient-to-r from-[#E86C28] to-[#f27a38] text-white font-bold text-xs tracking-wider uppercase shadow-md flex items-center justify-center gap-1.5 hover:from-[#d25c1b] hover:to-[#E86C28] transition-all">
+              <svg class="w-4 h-4 icon-line stroke-white flex-shrink-0" viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <span>Ver disponibilidad</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Vista SM+: layout horizontal -->
+      <div class="hidden sm:block p-2 sm:p-3">
+        <div class="flex items-center justify-between gap-2 lg:gap-3">
+          
+          <!-- Microcopy — solo xl -->
+          <div class="hidden xl:flex items-center gap-2 pl-2 text-[#004F9D] flex-shrink-0">
+            <span class="text-[#E86C28] text-base">✦</span>
+            <div class="text-left leading-tight">
+              <span id="cro-direct-badge" class="text-[10px] font-bold block uppercase tracking-wider text-gray-900">Reserva Directa</span>
+              <span id="cro-microcopy-text" class="text-[11px] text-emerald-700 font-bold">Mejor tarifa en nuestra web</span>
+            </div>
+          </div>
+
+          <form id="cro-booking-form" class="w-full flex items-center gap-2 flex-1 justify-center" onsubmit="handleBookingSubmit(event)">
+            
+            <!-- Check-In -->
+            <div class="flex-1 min-w-[120px] bg-white px-3 py-1.5 rounded-xl sm:rounded-full border border-gray-200 hover:border-[#004F9D] transition-colors shadow-sm">
+              <label id="cro-checkin-label" for="cro-checkin" class="block text-[9px] uppercase tracking-wider font-bold text-gray-400">Check-In</label>
+              <input type="date" id="cro-checkin" required class="w-full text-xs font-semibold text-gray-800 bg-transparent outline-none cursor-pointer" style="min-height:unset;" />
+            </div>
+
+            <!-- Check-Out -->
+            <div class="flex-1 min-w-[120px] bg-white px-3 py-1.5 rounded-xl sm:rounded-full border border-gray-200 hover:border-[#004F9D] transition-colors shadow-sm">
+              <label id="cro-checkout-label" for="cro-checkout" class="block text-[9px] uppercase tracking-wider font-bold text-gray-400">Check-Out</label>
+              <input type="date" id="cro-checkout" required class="w-full text-xs font-semibold text-gray-800 bg-transparent outline-none cursor-pointer" style="min-height:unset;" />
+            </div>
+
+            <!-- Huéspedes -->
+            <div class="flex-1 min-w-[110px] bg-white px-3 py-1.5 rounded-xl sm:rounded-full border border-gray-200 hover:border-[#004F9D] transition-colors shadow-sm">
+              <label id="cro-guests-label" for="cro-guests" class="block text-[9px] uppercase tracking-wider font-bold text-gray-400">Huéspedes</label>
+              <select id="cro-guests" class="w-full text-xs font-semibold text-gray-800 bg-transparent outline-none cursor-pointer" style="min-height:unset;">
+                <option value="2" id="opt-guests-2">2 Huéspedes</option>
+                <option value="1" id="opt-guests-1">1 Huésped</option>
+                <option value="3" id="opt-guests-3">3 Huéspedes</option>
+                <option value="4" id="opt-guests-4">Familiar (4+)</option>
+              </select>
+            </div>
+
+            <!-- Botón -->
+            <button type="submit" class="flex-shrink-0 px-5 lg:px-7 py-3 rounded-xl sm:rounded-full bg-gradient-to-r from-[#E86C28] to-[#f27a38] text-white font-bold text-xs tracking-wider uppercase shadow-md hover:shadow-lg hover:from-[#d25c1b] hover:to-[#E86C28] transition-all flex items-center justify-center gap-1.5">
+              <svg class="w-4 h-4 icon-line stroke-white flex-shrink-0" viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <span id="cro-btn-text" class="hidden lg:inline">Ver disponibilidad</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============================================================ -->
+  <!-- 11. BOTÓN WHATSAPP FLOTANTE -->
+  <!-- ============================================================ -->
+  <aside class="wa-container fixed bottom-24 right-4 sm:right-5 z-40 flex items-center gap-2.5 pointer-events-auto">
+    <div class="hidden sm:flex bg-white py-1.5 px-3.5 rounded-full shadow-lg border border-gray-100 text-xs font-semibold text-gray-700 items-center gap-1.5 animate-pulse">
+      <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
+      <span id="wa-bubble-text">¿Te ayudamos a elegir tu habitación?</span>
+    </div>
+    <a href="https://wa.me/573001234567?text=Hola%20Placita%20Vieja,%20quisiera%20consultar%20disponibilidad" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="w-12 h-12 sm:w-14 sm:h-14 p-3 sm:p-3.5 rounded-full bg-[#25D366] text-white shadow-xl hover:shadow-2xl hover:bg-[#20bd5a] transform hover:scale-110 transition-all flex items-center justify-center"
+       title="Escríbenos por WhatsApp">
+      <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/>
+      </svg>
+    </a>
+  </aside>
+
+  <!-- Modal de confirmación de reserva -->
+  <div id="booking-modal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl text-center relative border border-[#004F9D]/20">
+      <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#E86C28]/10 text-[#E86C28] flex items-center justify-center mx-auto mb-4">
+        <svg class="w-7 h-7 sm:w-8 sm:h-8 icon-line stroke-current" viewBox="0 0 24 24">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+      </div>
+      <h3 class="font-serif-luxury text-xl sm:text-2xl font-bold text-[#004F9D] mb-2" id="modal-title">
+        Consultando Mejor Tarifa Directa
+      </h3>
+      <p class="text-xs text-gray-600 mb-5 sm:mb-6 leading-relaxed" id="modal-desc">
+        Te estamos conectando con el motor de reservas con tarifa exclusiva de nuestra web y beneficio de spa incluido.
+      </p>
+      <div class="p-3 bg-[#FAF8F5] rounded-xl border border-gray-100 text-xs text-gray-700 mb-5 sm:mb-6 space-y-1" id="modal-details"></div>
+      <button onclick="closeModal()" class="w-full py-3 rounded-full bg-[#004F9D] text-white font-bold text-xs uppercase tracking-wider hover:bg-[#00376E] transition-colors">
+        Continuar al Motor de Reservas
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- JAVASCRIPT -->
+  <!-- ============================================================ -->
+  <script>
+    // ===== SLIDER HABITACIONES =====
+    function scrollRooms(direction) {
+      const slider = document.getElementById('room-slider');
+      const cardWidth = slider.querySelector('.room-slide-item').getBoundingClientRect().width;
+      slider.scrollBy({ left: (cardWidth + 16) * direction, behavior: 'smooth' });
+    }
+
+    // ===== INICIALIZAR FECHAS (ambos formularios, desktop y mobile) =====
+    window.addEventListener('DOMContentLoaded', () => {
+      const today = new Date();
+      const tomorrow = new Date(today);
+      tomorrow.setDate(tomorrow.getDate() + 2);
+      const formatDate = d => d.toISOString().split('T')[0];
+
+      // Desktop
+      const ci = document.getElementById('cro-checkin');
+      const co = document.getElementById('cro-checkout');
+      if (ci && co) {
+        ci.min = ci.value = formatDate(today);
+        co.min = co.value = formatDate(tomorrow);
+        ci.addEventListener('change', () => {
+          const nm = new Date(ci.value); nm.setDate(nm.getDate() + 1);
+          co.min = formatDate(nm);
+          if (new Date(co.value) <= new Date(ci.value)) co.value = formatDate(nm);
+        });
+      }
+
+      // Mobile
+      const cim = document.getElementById('cro-checkin-m');
+      const com = document.getElementById('cro-checkout-m');
+      if (cim && com) {
+        cim.min = cim.value = formatDate(today);
+        com.min = com.value = formatDate(tomorrow);
+        cim.addEventListener('change', () => {
+          const nm = new Date(cim.value); nm.setDate(nm.getDate() + 1);
+          com.min = formatDate(nm);
+          if (new Date(com.value) <= new Date(cim.value)) com.value = formatDate(nm);
+        });
+      }
+    });
+
+    // ===== MENÚ MÓVIL =====
+    function toggleMobileMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+
+    // ===== MODAL RESERVA =====
+    function handleBookingSubmit(e) {
+      e.preventDefault();
+      const isMobile = window.innerWidth < 640;
+      const checkin  = isMobile ? document.getElementById('cro-checkin-m').value  : document.getElementById('cro-checkin').value;
+      const checkout = isMobile ? document.getElementById('cro-checkout-m').value : document.getElementById('cro-checkout').value;
+      const guests   = isMobile ? document.getElementById('cro-guests-m').value   : document.getElementById('cro-guests').value;
+      
+      document.getElementById('modal-details').innerHTML = `
+        <div><strong>Check-In:</strong> ${checkin} | <strong>Check-Out:</strong> ${checkout}</div>
+        <div><strong>Huéspedes:</strong> ${guests} | <strong>Beneficio:</strong> Spa incluido</div>
+      `;
+      document.getElementById('booking-modal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('booking-modal').classList.add('hidden');
+    }
+
+    // ===== MOTOR DE TRADUCCIÓN BILINGÜE ES / EN =====
+    const contentData = {
+      es: {
+        pageTitle: "Placita Vieja Hotel Boutique & Spa | Santuario Histórico en Santa Marta",
+        metaDesc: "Descubre Placita Vieja Hotel Boutique & Spa en el Parque de los Novios, Santa Marta. Un santuario de paz orgánica desde 1925 con ascensor, spa privado y la mejor tarifa garantizada directa.",
+        announcement: "Santuario Histórico en el Parque de los Novios · Reserva Directa con Beneficio Exclusivo en Spa",
+        slogan: '"Donde el Caribe y el Pacífico muestran su realidad."',
+        headerReserveBtn: "RESERVAR",
+        heroBadge: "El Efecto Narnia · Santuario de Paz Orgánica",
+        heroH1Line1: "Un hotel con historia.",
+        heroH1Line2: "Una estadía para recordar.",
+        heroParagraph: "En el corazón de Santa Marta, descubre un refugio donde la profundidad del Pacífico se encuentra con la alegría del Caribe para brindarte comodidad.",
+        heroCtaRooms: "Explorar Habitaciones",
+        heroCtaSpa: "Descubrir el Spa",
+        heroFloat: "Detener el tiempo y flotar",
+        trustTripadvisor: "Calificación Excelente por viajeros",
+        trustBooking: "Puntuación 9.0+ · Fantástico",
+        trustRnt: "Registro Nacional de Turismo Oficial",
+        trustQuiet: "Barrera de paz frente al ruido exterior",
+        storyBadge: "Herencia & Descanso desde 1925",
+        storyTitle1: "Una historia que se vive,",
+        storyTitle2: "no solo se cuenta.",
+        storyDesc: "Desde 1925, esta casa guarda parte de la memoria de Santa Marta y Buenaventura. Hoy, la convertimos en una experiencia de descanso pensada para disfrutar cada detalle. Una casa colonial restaurada por manos de orfebre donde el arte, la calidez y el silencio convergen.",
+        storyCtaAbout: "Conoce Placita Vieja",
+        storyCtaSpa: "Ver Menú Spa",
+        essElevTitle: "Ascensor", essElevSub: "Comodidad sin complicaciones",
+        essElevDesc: "Conexión fluida e inclusiva en los 3 pisos de la casa, una singularidad exclusiva en el centro histórico.",
+        essSpaTitle: "Spa Privado", essSpaSub: "Tiempo para desconectar",
+        essSpaDesc: "Circuito de hidroterapia para detener el tiempo y restaurar la mente con rituales personalizados.",
+        essBikeTitle: "Bicicletas", essBikeSub: "Santa Marta a tu ritmo",
+        essBikeDesc: "Recorre el centro colonial, el malecón de la bahía y el Parque de los Novios sin prisas.",
+        essPoolTitle: "Piscina & Circuito", essPoolSub: "Circuito Hídrico de autor",
+        essPoolDesc: "Un espejo de agua íntimo rodeado de plantas tropicales para disfrutar de la brisa marina al atardecer.",
+        roomsBadge: "Lienzos Narrativos · Descanso Singular",
+        roomsTitle1: "Tu habitación también",
+        roomsTitle2: "cuenta una historia.",
+        roomsSub: "Descubre espacios inspirados en personas, paisajes y momentos que hacen de Placita Vieja un santuario diferente.",
+        roomActionText: "Ver habitación", suiteActionText: "Explorar suite",
+        r1Title: "Habitación Deluxe El Viejo y El Mar", r1Desc: "Inspirada en el ritual marino del fundador y la calma de flotar en el mar. Cama King, balcón con vista colonial y arte de orfebrería original.", r1Narrative: "La Habitación del Abuelo",
+        r2Title: "Junior Suite Uguana Nuka", r2Desc: "El vocablo indígena Wiwa para el amor y la complicidad. Espacio íntimo con tina de hidromasaje privada y piezas artesanales exclusivas.", r2Narrative: "Dialecto Wiwa · Romance",
+        r3Title: "Suite Presidencial Macondo", r3Desc: "Homenaje al encanto literario del Caribe y las mariposas amarillas. Amplitud sublime, terraza privada, jacuzzi y mayordomía boutique.", r3Narrative: "Realismo Mágico",
+        r4Title: "Habitación Estándar Zona Bananera", r4Desc: "Evocación de la época dorada de la región. Diseño colonial sobrio, ventilación natural y comodidades contemporáneas.", r4Narrative: "Legado Agrícola & Histórico",
+        r5Title: "Habitación Estándar Sierra Nevada", r5Desc: "Homenaje a los picos sagrados que coronan a Santa Marta. Un ambiente fresco, apacible e impregnado de misticismo.", r5Narrative: "Respeto Sagrado Ancestral",
+        spaH21: "Un santuario de paz", spaH22: "en el corazón de Santa Marta.",
+        spaDescText: "Haz una pausa en nuestro circuito hídrico privado y deja que la ciudad continúe a tu propio ritmo. Diseñado como un refugio de bienestar orgánico que regenera cuerpo y espíritu tras un día bajo el sol del Caribe y las brisas de la Sierra Nevada.",
+        spaUpsellBadge: "Añadir una experiencia a mi estadía",
+        spaUpsellDesc: "Personaliza tu estancia con acceso exclusivo al circuito hídrico, masajes terapéuticos con esencias botánicas del Magdalena y una copa de cortesía en Sol Bailado Bar.",
+        spaCta1: "Descubrir el Spa", spaCta2: "Explorar Santa Marta",
+        perksBadge: "Reserva Sin Intermediarios",
+        perksTitle: "Ventajas exclusivas al reservar directo en nuestra web",
+        perksSub: "Reserva directamente con Placita Vieja y disfruta de los beneficios disponibles exclusivamente a través de nuestra web.",
+        perk1H3: "Mejor precio garantizado", perk1P: "Encuentra aquí nuestra mejor tarifa disponible sin comisiones extras ni sobreprecios de agencias de terceros.",
+        perk2H3: "Beneficio en Spa", perk2P: "Disfruta de un beneficio especial durante tu estadía en nuestro circuito privado de hidroterapia.",
+        perk3H3: "Check-out flexible", perk3P: "Sujeto a disponibilidad. Disfruta con calma de tus últimas horas en Santa Marta sin prisas innecesarias.",
+        perksCtaBtn: "Reservar en la web",
+        reviewsBadge: "Testimonios Verificados",
+        reviewsTitle: "Lo que dicen quienes han vivido el santuario",
+        reviewsSub: "Opiniones reales de huéspedes en Booking.com, TripAdvisor y Google Reviews",
+        rev1Text: '"Un oasis increíble en medio del movimiento del Parque de los Novios. Cierras la puerta del hotel y reina el silencio absoluto. El ascensor y el spa son una joya única."',
+        rev2Text: '"Se siente el amor con el que la familia restauró esta casa. La Suite Macondo tiene magia pura. El servicio es personalizado como en ninguna cadena comercial."',
+        rev3Text: '"La mejor ubicación de Santa Marta pero sin el ruido exterior. El desayuno caribeño delicioso y el circuito hídrico privado por la tarde nos renovó por completo."',
+        footerSummary: "Historia, descanso y una forma diferente de vivir Santa Marta. Un santuario de paz orgánica donde la elegancia y la calidez del hogar se fusionan en el Parque de los Novios.",
+        footerNavTitle: "Navegación", footerDestTitle: "Santa Marta", footerLegalTitle: "Políticas",
+        croDirectBadge: "Reserva Directa", croMicrocopyText: "Mejor tarifa en nuestra web",
+        croCheckinLabel: "Check-In", croCheckoutLabel: "Check-Out", croGuestsLabel: "Huéspedes",
+        croBtnText: "Ver disponibilidad",
+        waBubbleText: "¿Te ayudamos a elegir tu habitación?",
+        modalTitle: "Consultando Mejor Tarifa Directa",
+        modalDesc: "Te estamos conectando con el motor de reservas con tarifa exclusiva de nuestra web y beneficio de spa incluido."
+      },
+      en: {
+        pageTitle: "Placita Vieja Hotel Boutique & Spa | Historic Sanctuary in Santa Marta",
+        metaDesc: "Discover Placita Vieja Hotel Boutique & Spa in Parque de los Novios, Santa Marta. An organic peace sanctuary since 1925 with elevator, private spa, and best direct rate guaranteed.",
+        announcement: "Historic Sanctuary in Parque de los Novios · Direct Booking with Exclusive Spa Benefit",
+        slogan: '"Where the Caribbean and the Pacific show their reality."',
+        headerReserveBtn: "BOOK NOW",
+        heroBadge: "The Narnia Effect · Organic Sanctuary of Peace",
+        heroH1Line1: "A hotel with history.",
+        heroH1Line2: "A stay to remember.",
+        heroParagraph: "In the heart of Santa Marta, discover a haven where the depths of the Pacific meet the joy of the Caribbean, offering you ultimate comfort.",
+        heroCtaRooms: "Explore Rooms",
+        heroCtaSpa: "Discover the Spa",
+        heroFloat: "Stop time and float",
+        trustTripadvisor: "Excellent Rating by travelers",
+        trustBooking: "Score 9.0+ · Fantastic",
+        trustRnt: "Official National Tourism Registry",
+        trustQuiet: "Acoustic peace barrier against outside noise",
+        storyBadge: "Heritage & Rest since 1925",
+        storyTitle1: "A story you don't just hear about —",
+        storyTitle2: "you experience it.",
+        storyDesc: "Since 1925, this house has held part of Santa Marta's history. Today, we turn that heritage into a stay designed around every detail. A colonial house restored by a master jeweler where art, warmth, and peace converge.",
+        storyCtaAbout: "Discover Placita Vieja", storyCtaSpa: "View Spa Menu",
+        essElevTitle: "Elevator", essElevSub: "Effortless comfort",
+        essElevDesc: "Seamless and inclusive connection across all 3 floors, a rare privilege in the historic center.",
+        essSpaTitle: "Private Spa", essSpaSub: "Time to unwind",
+        essSpaDesc: "Private hydrotherapy circuit to freeze time and rejuvenate your mind with personalized rituals.",
+        essBikeTitle: "Bicycles", essBikeSub: "Santa Marta your way",
+        essBikeDesc: "Explore the historic center, the bay, and colonial streets on our complimentary bikes.",
+        essPoolTitle: "Pool & Circuit", essPoolSub: "Signature water circuit",
+        essPoolDesc: "An intimate water mirror surrounded by lush tropical plants to savor the evening sea breeze.",
+        roomsBadge: "Narrative Canvases · Singular Comfort",
+        roomsTitle1: "Your room has a story",
+        roomsTitle2: "to tell, too.",
+        roomsSub: "Discover spaces inspired by the people, landscapes and moments that make Placita Vieja unlike anywhere else.",
+        roomActionText: "View room", suiteActionText: "Explore suite",
+        r1Title: "El Viejo y El Mar Deluxe Room", r1Desc: "Inspired by the founder's ocean ritual and deep sea contemplation. King bed, colonial balcony, and original artisan goldwork.", r1Narrative: "The Grandfather's Room",
+        r2Title: "Uguana Nuka Junior Suite", r2Desc: "The indigenous Wiwa term for love and romance. An intimate sanctuary featuring a private whirlpool bath and bespoke craft.", r2Narrative: "Wiwa Dialect · Romance",
+        r3Title: "Macondo Presidential Suite", r3Desc: "A poetic tribute to Caribbean literary marvels and yellow butterflies. Expansive luxury, private terrace, jacuzzi, and dedicated service.", r3Narrative: "Magical Realism",
+        r4Title: "Zona Bananera Standard Room", r4Desc: "Evoking the golden era of the region. Understated colonial architecture, natural ventilation, and contemporary comforts.", r4Narrative: "Agricultural Heritage",
+        r5Title: "Sierra Nevada Standard Room", r5Desc: "A tribute to the sacred snow-capped peaks guarding Santa Marta. A fresh, peaceful atmosphere bathed in ancestral mysticism.", r5Narrative: "Sacred Respect",
+        spaH21: "A sanctuary of peace", spaH22: "in the heart of Santa Marta.",
+        spaDescText: "Slow down in our private hydrotherapy circuit and let the city unfold at your own pace. Conceived as an organic haven to refresh body and soul after a sun-soaked day along the coast and mountains.",
+        spaUpsellBadge: "Add an experience to my stay",
+        spaUpsellDesc: "Elevate your stay with private hydrotherapy access, botanical essential oil therapies, and a signature cocktail at Sol Bailado Bar.",
+        spaCta1: "Discover the Spa", spaCta2: "Explore Santa Marta",
+        perksBadge: "Book Direct Without Intermediaries",
+        perksTitle: "Exclusive benefits when booking directly on our website",
+        perksSub: "Book direct with Placita Vieja and enjoy perks available exclusively through our official website.",
+        perk1H3: "Best rate guarantee", perk1P: "Find our lowest rate right here with zero hidden fees or third-party platform surcharges.",
+        perk2H3: "Spa benefit", perk2P: "Enjoy a special benefit during your stay in our private hydrotherapy circuit.",
+        perk3H3: "Flexible check-out", perk3P: "Subject to availability. Take your time and savor your final hours in Santa Marta with zero rush.",
+        perksCtaBtn: "Book direct",
+        reviewsBadge: "Verified Guest Reviews",
+        reviewsTitle: "What guests say once they step into the sanctuary",
+        reviewsSub: "Authentic feedback certified on Booking.com, TripAdvisor, and Google Reviews",
+        rev1Text: '"An incredible oasis right in the heart of Parque de los Novios. You close the hotel front door and absolute silence takes over. The elevator and private spa are an absolute gem."',
+        rev2Text: '"You can feel the family love poured into restoring this mansion. The Macondo Suite is pure magic. Truly personalized service unlike any commercial hotel chain."',
+        rev3Text: '"The best location in Santa Marta without any outside noise. Delicious Caribbean breakfast and the private hydrotherapy session in the afternoon completely revived us."',
+        footerSummary: "History, relaxation and a different way to experience Santa Marta. An organic peace sanctuary where elegance and home warmth meet at Parque de los Novios.",
+        footerNavTitle: "Navigation", footerDestTitle: "Santa Marta", footerLegalTitle: "Policies",
+        croDirectBadge: "Direct Booking", croMicrocopyText: "Best available rate on our website",
+        croCheckinLabel: "Check-in", croCheckoutLabel: "Check-out", croGuestsLabel: "Guests",
+        croBtnText: "Check availability",
+        waBubbleText: "Need help choosing your room?",
+        modalTitle: "Checking Direct Best Available Rate",
+        modalDesc: "Connecting you directly to our booking engine with exclusive rates and complimentary spa benefit included."
+      }
+    };
+
+    function setLanguage(lang) {
+      const btnEs = document.getElementById('lang-btn-es');
+      const btnEn = document.getElementById('lang-btn-en');
+      if (lang === 'es') {
+        btnEs.className = "px-2.5 sm:px-3 py-1 rounded-full bg-white text-[#004F9D] shadow-sm transition-all flex items-center gap-1";
+        btnEn.className = "px-2.5 sm:px-3 py-1 rounded-full text-gray-500 hover:text-[#004F9D] transition-all flex items-center gap-1";
+        document.documentElement.lang = "es";
+      } else {
+        btnEn.className = "px-2.5 sm:px-3 py-1 rounded-full bg-white text-[#004F9D] shadow-sm transition-all flex items-center gap-1";
+        btnEs.className = "px-2.5 sm:px-3 py-1 rounded-full text-gray-500 hover:text-[#004F9D] transition-all flex items-center gap-1";
+        document.documentElement.lang = "en";
+      }
+
+      const d = contentData[lang];
+      // Meta
+      document.getElementById('page-title').innerText = d.pageTitle;
+      document.getElementById('meta-description').setAttribute('content', d.metaDesc);
+      document.getElementById('announcement-text').innerText = d.announcement;
+      // Header
+      document.getElementById('header-slogan').innerText = d.slogan;
+      document.getElementById('header-reserve-btn').innerText = d.headerReserveBtn;
+      // Hero
+      document.getElementById('hero-badge').innerText = d.heroBadge;
+      document.getElementById('hero-h1-line1').innerText = d.heroH1Line1;
+      document.getElementById('hero-h1-line2').innerText = d.heroH1Line2;
+      document.getElementById('hero-paragraph').innerText = d.heroParagraph;
+      document.getElementById('hero-cta-rooms').innerText = d.heroCtaRooms;
+      document.getElementById('hero-cta-spa').innerText = d.heroCtaSpa;
+      document.getElementById('hero-float-text').innerText = d.heroFloat;
+      // Trust
+      document.getElementById('trust-tripadvisor').innerText = d.trustTripadvisor;
+      document.getElementById('trust-booking').innerText = d.trustBooking;
+      document.getElementById('trust-rnt').innerText = d.trustRnt;
+      document.getElementById('trust-quiet').innerText = d.trustQuiet;
+      // Historia
+      document.getElementById('story-badge').innerText = d.storyBadge;
+      document.getElementById('story-title-1').innerText = d.storyTitle1;
+      document.getElementById('story-title-2').innerText = d.storyTitle2;
+      document.getElementById('story-desc').innerText = d.storyDesc;
+      document.getElementById('story-cta-about').querySelector('span').innerText = d.storyCtaAbout;
+      document.getElementById('story-cta-spa').querySelector('span').innerText = d.storyCtaSpa;
+      // Esenciales
+      document.getElementById('ess-elev-title').innerText = d.essElevTitle;
+      document.getElementById('ess-elev-sub').innerText = d.essElevSub;
+      document.getElementById('ess-elev-desc').innerText = d.essElevDesc;
+      document.getElementById('ess-spa-title').innerText = d.essSpaTitle;
+      document.getElementById('ess-spa-sub').innerText = d.essSpaSub;
+      document.getElementById('ess-spa-desc').innerText = d.essSpaDesc;
+      document.getElementById('ess-bike-title').innerText = d.essBikeTitle;
+      document.getElementById('ess-bike-sub').innerText = d.essBikeSub;
+      document.getElementById('ess-bike-desc').innerText = d.essBikeDesc;
+      document.getElementById('ess-pool-title').innerText = d.essPoolTitle;
+      document.getElementById('ess-pool-sub').innerText = d.essPoolSub;
+      document.getElementById('ess-pool-desc').innerText = d.essPoolDesc;
+      // Rooms
+      document.getElementById('rooms-badge').innerText = d.roomsBadge;
+      document.getElementById('rooms-title-1').innerText = d.roomsTitle1;
+      document.getElementById('rooms-title-2').innerText = d.roomsTitle2;
+      document.getElementById('rooms-sub').innerText = d.roomsSub;
+      document.querySelectorAll('.room-action-text').forEach(el => el.innerText = d.roomActionText);
+      document.querySelectorAll('.suite-action-text').forEach(el => el.innerText = d.suiteActionText);
+      document.getElementById('r1-title').innerText = d.r1Title;
+      document.getElementById('r1-desc').innerText = d.r1Desc;
+      document.getElementById('r1-narrative').innerText = d.r1Narrative;
+      document.getElementById('r2-title').innerText = d.r2Title;
+      document.getElementById('r2-desc').innerText = d.r2Desc;
+      document.getElementById('r2-narrative').innerText = d.r2Narrative;
+      document.getElementById('r3-title').innerText = d.r3Title;
+      document.getElementById('r3-desc').innerText = d.r3Desc;
+      document.getElementById('r3-narrative').innerText = d.r3Narrative;
+      document.getElementById('r4-title').innerText = d.r4Title;
+      document.getElementById('r4-desc').innerText = d.r4Desc;
+      document.getElementById('r4-narrative').innerText = d.r4Narrative;
+      document.getElementById('r5-title').innerText = d.r5Title;
+      document.getElementById('r5-desc').innerText = d.r5Desc;
+      document.getElementById('r5-narrative').innerText = d.r5Narrative;
+      // Spa
+      document.getElementById('spa-h2-1').innerText = d.spaH21;
+      document.getElementById('spa-h2-2').innerText = d.spaH22;
+      document.getElementById('spa-desc-text').innerText = d.spaDescText;
+      document.getElementById('spa-upsell-badge').innerText = d.spaUpsellBadge;
+      document.getElementById('spa-upsell-desc').innerText = d.spaUpsellDesc;
+      document.getElementById('spa-cta-1').innerText = d.spaCta1;
+      document.getElementById('spa-cta-2').innerText = d.spaCta2;
+      // Perks
+      document.getElementById('perks-badge').innerText = d.perksBadge;
+      document.getElementById('perks-title').innerText = d.perksTitle;
+      document.getElementById('perks-sub').innerText = d.perksSub;
+      document.getElementById('perk1-h3').innerText = d.perk1H3;
+      document.getElementById('perk1-p').innerText = d.perk1P;
+      document.getElementById('perk2-h3').innerText = d.perk2H3;
+      document.getElementById('perk2-p').innerText = d.perk2P;
+      document.getElementById('perk3-h3').innerText = d.perk3H3;
+      document.getElementById('perk3-p').innerText = d.perk3P;
+      document.getElementById('perks-cta-btn').innerText = d.perksCtaBtn;
+      // Reviews
+      document.getElementById('reviews-badge').innerText = d.reviewsBadge;
+      document.getElementById('reviews-title').innerText = d.reviewsTitle;
+      document.getElementById('reviews-sub').innerText = d.reviewsSub;
+      document.getElementById('rev1-text').innerText = d.rev1Text;
+      document.getElementById('rev2-text').innerText = d.rev2Text;
+      document.getElementById('rev3-text').innerText = d.rev3Text;
+      // Footer
+      document.getElementById('footer-summary').innerText = d.footerSummary;
+      document.getElementById('footer-nav-title').innerText = d.footerNavTitle;
+      document.getElementById('footer-dest-title').innerText = d.footerDestTitle;
+      document.getElementById('footer-legal-title').innerText = d.footerLegalTitle;
+      // CRO
+      const cbd = document.getElementById('cro-direct-badge');
+      const cmt = document.getElementById('cro-microcopy-text');
+      if (cbd) cbd.innerText = d.croDirectBadge;
+      if (cmt) cmt.innerText = d.croMicrocopyText;
+      document.getElementById('cro-checkin-label').innerText = d.croCheckinLabel;
+      document.getElementById('cro-checkout-label').innerText = d.croCheckoutLabel;
+      document.getElementById('cro-guests-label').innerText = d.croGuestsLabel;
+      const cbt = document.getElementById('cro-btn-text');
+      if (cbt) cbt.innerText = d.croBtnText;
+      // WA
+      document.getElementById('wa-bubble-text').innerText = d.waBubbleText;
+      // Modal
+      document.getElementById('modal-title').innerText = d.modalTitle;
+      document.getElementById('modal-desc').innerText = d.modalDesc;
+    }
+  </script>
+</body>
+</html>
